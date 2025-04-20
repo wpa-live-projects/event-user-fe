@@ -15,7 +15,7 @@ const Login = () => {
     try {
       // Sending login request
      // ✅ Corrected Login.jsx
-const res = await axios.post('https://event-mng-user-be.onrender.com//api/users/login', form);
+const res = await axios.post('https://event-mng-user-be.onrender.com/api/users/login', form);
 
       alert('Login successful!');
       

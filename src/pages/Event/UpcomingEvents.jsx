@@ -6,7 +6,7 @@ function UpcomingEvents() {
 
   useEffect(() => {
     const fetchEvents = async () => {
-      const res = await axios.get('https://event-mng-user-be.onrender.com//api/events/upcoming');
+      const res = await axios.get('https://event-mng-user-be.onrender.com/api/events/upcoming');
       setEvents(res.data);
     };
     fetchEvents();

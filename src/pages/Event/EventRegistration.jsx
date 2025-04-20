@@ -26,7 +26,7 @@ const EventRegistration = () => {
     console.log('Registering with the following data:', formData); // Log the form data to check
 
     try {
-      const res = await axios.post('https://event-mng-user-be.onrender.com//api/events/register', formData);
+      const res = await axios.post('https://event-mng-user-be.onrender.com/api/events/register', formData);
       alert(res.data.message);
       localStorage.setItem('registeredUser', formData.name); // Store user name in localStorage
     } catch (err) {
@@ -37,7 +37,7 @@ const EventRegistration = () => {
 
   const fetchAllEvents = async () => {
     try {
-      const res = await axios.get('https://event-mng-user-be.onrender.com//api/events/events');
+      const res = await axios.get('https://event-mng-user-be.onrender.com/api/events/events');
       setAllEvents(res.data);
     } catch (err) {
       console.error('Error fetching all events:', err);

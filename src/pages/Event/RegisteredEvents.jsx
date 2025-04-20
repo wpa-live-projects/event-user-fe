@@ -27,7 +27,7 @@ const RegisteredEvents = () => {
     if (!window.confirm(`Are you sure you want to cancel registration for "${eventName}"?`)) return;
 
     try {
-      const res = await axios.delete('https://event-mng-user-be.onrender.com//api/events/cancel', {
+      const res = await axios.delete('https://event-mng-user-be.onrender.com/api/events/cancel', {
         data: { name, eventName }  // Sending name and event name for cancellation
       });
       alert(res.data.message);

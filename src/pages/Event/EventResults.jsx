@@ -5,7 +5,7 @@ function EventResults() {
   const [results, setResults] = useState([]);
 
   useEffect(() => {
-    axios.get('https://event-mng-user-be.onrender.com//api/events/results').then(res => {
+    axios.get('https://event-mng-user-be.onrender.com/api/events/results').then(res => {
       setResults(res.data);
     });
   }, []);

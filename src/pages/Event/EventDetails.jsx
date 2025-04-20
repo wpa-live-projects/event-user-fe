@@ -7,7 +7,7 @@ const EventDetails = () => {
 
   const fetchDetails = async () => {
     try {
-      const res = await axios.get(`https://event-mng-user-be.onrender.com//api/events/details/${eventName}`);
+      const res = await axios.get(`https://event-mng-user-be.onrender.com/api/events/details/${eventName}`);
       setEvent(res.data);
     } catch (err) {
       alert('Event not found');
