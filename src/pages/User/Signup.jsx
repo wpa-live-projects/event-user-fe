@@ -11,7 +11,7 @@ function Signup() {
   const handleSignup = async (e) => {
     e.preventDefault();
     try {
-      const res = await axios.post('https://event-mng-user-be.onrender.com//api/users/signup', {
+      const res = await axios.post('https://event-mng-user-be.onrender.com/api/users/signup', {
         email,
         username, // match your backend field name
         password,
